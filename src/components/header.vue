@@ -3,8 +3,9 @@
 <template>
     <header>
         <h1> {{ title }} </h1>
-
-        <Button color="blue" text="Click" />
+        <br>
+        <Button color="blue" text="Add" />
+       
     </header>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-    <button :style="{ background: color }"> {{ text }}</button>
+    <button @click="onClick()" :style="{ background: color }"> {{ text }}</button>
 </template>
 
 
@@ -11,6 +11,11 @@
             text:String,
             color:String,
         },
+        methods: {
+            onClick(){
+                console.log('click')
+            }
+        }
     }
 </script>
 
@@ -19,10 +24,11 @@
 button{
     background-color: brown;
     color: white;
+    border:none;
+    border-radius: 10px;
     padding: 10px;
-    border: none;
-    height: 30px;
-    width: 50px;
+    width: 80px;
+   
 
 }
 </style>
